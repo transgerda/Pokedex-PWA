@@ -41,7 +41,6 @@
         <meta name="description" content="A simple pokedex app built with Vue.js and Material Design Components" />
         <meta name="msaplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="favicon" content="/assets/favicon.png" />
     </head>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
