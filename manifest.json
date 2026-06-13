@@ -1,0 +1,11 @@
+{
+    "name": "Pokédex",
+    "short_name": "Pokédex",
+    "description": "Pokédex is a web application that provides information about Pokémon.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4f46e5",
+    "orientation": "portrait",
+    "icons": []
+}

@@ -1,0 +1,21 @@
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/icon-button/mdc-icon-button";
+
+@use "@material/drawer";
+@use "@material/list";
+
+@import "tailwindcss";
+
+@include textfield.core-styles;
+@include drawer.core-styles;
+@include drawer.modal-core-styles;  // needed for modal variant
+@include list.deprecated-core-styles;
+
+:root {
+  --mdc-theme-primary: #6200ee;
+}
