@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import FavoritesView from "../views/FavoritesView.vue";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/pokedex/"),
   routes: [
     {
       path: "/",

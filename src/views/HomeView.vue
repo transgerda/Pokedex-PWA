@@ -6,7 +6,6 @@
         ref,
         computed,
         onMounted,
-        watch,
     } from 'vue';
 
     import PokemonCard from '../components/PokemonCard.vue'
@@ -75,7 +74,7 @@
 
         <div class="pokemon-wrapper">
             <PokemonCard v-for="pokemon in visiblePokemon" :key="pokemon.id" :name="pokemon.name"
-                :url="pokemon.url" :id="pokemon.id" :image="pokemon.image" @click="openSheet(pokemon.id)" />
+                :url="pokemon.url" :id="pokemon.id" image="pokemon.image" @click="openSheet(pokemon.id)" />
         </div>
 
         <div ref="lazyLoader" style="height:1px"></div>

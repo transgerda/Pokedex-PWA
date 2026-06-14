@@ -5,7 +5,6 @@
 
     const props = defineProps({
         pokemons: Array,
-        image: String,
     })
 
     const sheet = ref(null)
@@ -19,10 +18,10 @@
         if (!sheet.value) return
 
         pokemon.value = props.pokemons.find(p => p.id === id) ?? null
-        isFavorite.value = pokemon.value ? favorites.value.includes(pokemon.value.id) : false
+        isFavorite.value = favorites.value.includes(pokemon.value.id)
 
         if (placeholderImage.value && pokemon.value) {
-            placeholderImage.value.src = pokemon.value.image
+            placeholderImage.value.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + pokemon.value.id + '.png'
         }
 
         sheet.value.classList.remove('sheet-out-of-view')
@@ -93,10 +92,6 @@
                     <span class="mdc-top-app-bar__title">{{ pokemon?.name }}</span>
                 </section>
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                        aria-label="Share">share</button>
-                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                        aria-label="Options">more_vert</button>
                 </section>
             </div>
         </header>

@@ -36,17 +36,6 @@
 </script>
 
 <template>
-
-    <head>
-        <meta name="description" content="A simple pokedex app built with Vue.js and Material Design Components" />
-        <meta name="msaplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-    </head>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
     <Drawer ref="drawer" />
     <Header @openDrawer="openDrawer" />
 
