@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import { useFavicon, useTitle } from "@vueuse/core";
 
-useFavicon("./assets/favicon.png");
+useFavicon("/favicon.ico");
 useTitle("Pokedex");
 
 const app = createApp(App);
